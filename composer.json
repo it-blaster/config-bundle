@@ -1,0 +1,26 @@
+{
+    "name": "it-blaster/config-bundle",
+    "description": "Symfony2 bundle, adds config list to Sonata",
+    "type": "symfony-bundle",
+    "keywords": ["config", "sonata"],
+    "homepage": "https://github.com/it-blaster/config-bundle",
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "IT-Blaster",
+            "email": "it-blaster@yandex.ru"
+        }
+    ],
+    "require": {
+        "symfony/symfony": ">=2.2",
+        "propel/propel-bundle": ">=1.0",
+        "sonata-project/propel-admin-bundle": ">=1.0",
+        "egeloen/ckeditor-bundle": ">=2.0",
+        "it-blaster/translation-bundle": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "ItBlaster\\ConfigBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "ItBlaster/ConfigBundle"
+}
