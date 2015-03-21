@@ -1,0 +1,9 @@
+parameters:
+#    it_blaster_config.example.class: ItBlaster\ConfigBundle\Example
+
+services:
+    it_blaster_config.admin.config:
+        class: ItBlaster\ConfigBundle\Admin\ConfigAdmin
+        arguments: [~, ItBlaster\ConfigBundle\Model\Config, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: propel, group: admin_group_label, label: it_blaster_config_item_label}
