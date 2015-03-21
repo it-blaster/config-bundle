@@ -2,7 +2,6 @@
 
 ## Installation
 Add to `composer.json` and install
-
 ``` js
 {
     "require": {
@@ -27,4 +26,10 @@ public function registerBundles()
 Build models
 ``` bash
 $ php app/console propel:build
+```
+
+## Usage
+Use `get` method wherever you need
+``` php
+$value = Config::get('config_key', $request->getLocale());
 ```
