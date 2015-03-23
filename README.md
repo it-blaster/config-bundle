@@ -1,4 +1,6 @@
 # ConfigBundle
+[![Build Status](https://scrutinizer-ci.com/g/it-blaster/config-bundle/badges/build.png?b=master)](https://scrutinizer-ci.com/g/it-blaster/config-bundle/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/it-blaster/config-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/it-blaster/config-bundle/?branch=master)
 
 ## Installation
 Add to `composer.json` and install
