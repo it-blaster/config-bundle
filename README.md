@@ -35,3 +35,8 @@ Use `get` method wherever you need
 ``` php
 $value = Config::get('config_key', $request->getLocale());
 ```
+
+Twig function:
+``` twig
+{{ config('social_twitter_link', app.request.locale) }}
+```

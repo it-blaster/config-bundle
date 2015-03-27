@@ -7,3 +7,8 @@ services:
         arguments: [~, ItBlaster\ConfigBundle\Model\Config, SonataAdminBundle:CRUD]
         tags:
             - {name: sonata.admin, manager_type: propel, group: admin_group_label, label: it_blaster_config_item_label}
+
+    it_blaster_config.twig_extension:
+        class: ItBlaster\ConfigBundle\Twig\ItBlasterConfigExtension
+        tags:
+            - { name: twig.extension }
