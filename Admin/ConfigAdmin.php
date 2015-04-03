@@ -20,11 +20,11 @@ class ConfigAdmin extends Admin
             ->add('Id')
             ->addIdentifier('Name', null, array(
                 'label' => 'it_blaster_config_form_name',
-                'sortable' => false,
+                'sortable' => true,
             ))
             ->addIdentifier('Title', null, array(
                 'label' => 'it_blaster_config_form_title',
-                'sortable' => false,
+                'sortable' => true,
             ))
             ->add('Value', null, array(
                 'label' => 'it_blaster_config_form_value',
