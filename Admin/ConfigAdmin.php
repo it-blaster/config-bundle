@@ -11,6 +11,17 @@ use Symfony\Bridge\Propel1\Form\Type\TranslationType;
 
 class ConfigAdmin extends Admin
 {
+
+    /**
+     * Default Datagrid values
+     *
+     * @var array
+     */
+    protected $datagridValues = array(
+        '_sort_order' => 'ASC',
+        '_sort_by' => 'Name'
+    );
+
     /**
      * @param ListMapper $listMapper
      */
