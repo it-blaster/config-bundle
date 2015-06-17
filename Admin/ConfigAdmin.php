@@ -3,6 +3,7 @@
 namespace ItBlaster\ConfigBundle\Admin;
 
 use Sonata\AdminBundle\Admin\Admin;
+use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Route\RouteCollection;
@@ -18,9 +19,25 @@ class ConfigAdmin extends Admin
      * @var array
      */
     protected $datagridValues = array(
+        '_per_page'   => 100,
         '_sort_order' => 'ASC',
         '_sort_by' => 'Name'
     );
+
+    protected $perPageOptions = array(20, 50, 100, 500);
+    protected $maxPerPage = 100;
+    protected $maxPageLinks = 1000;
+
+    /**
+     * @param DatagridMapper $datagridMapper
+     */
+    protected function configureDatagridFilters(DatagridMapper $datagridMapper)
+    {
+        $datagridMapper
+            ->add('Name')
+            ->add('Title')
+        ;
+    }
 
     /**
      * @param ListMapper $listMapper
